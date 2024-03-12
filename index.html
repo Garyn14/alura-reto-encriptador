@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="logo">
+        <img src="img/Logo.png" alt="">
+    </header>
+   
+    <main class="principal">
+        <section>
+            <div class="entrada-texto">
+                <textarea id="entradaTexto" cols="40" rows="12" placeholder="Ingrese el texto aqui"></textarea>
+            </div>
+            <div class="botones">
+                <p class="texto-informatico">&#9888; Solo letras minúsculas y sin acentos</p>
+                <input type="button" value="Encriptar" onclick="botonEncriptar()" class="boton boton-encriptar">
+                <input type="button" value="Desencriptar" onclick="botonDesencriptar()" class="boton boton-desencriptar">                
+            </div>
+        </section>
+
+        <section class="respuesta">
+            <img src="img/boy.png" alt="niño con una lupa" id="imagen-nino">
+            <div class="texto">
+                <p class="texto-fuerte">Ningún mensaje fue encontrado</p>
+                <p class="texto-debil">Ingrese el texto que desees encriptar o desencriptar</p>
+            </div>
+
+        </section>
+        <section class="respuesta-texto" style="display:none;">
+            <textarea cols="26" rows="22" class="texto-respuesta" readonly>Texto alternativo</textarea>
+        </section>        
+    </main>
+    <footer></footer>
+    <script src="js/logica.js"></script>
+</body>
+</html>
